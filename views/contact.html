@@ -1,0 +1,37 @@
+<div class="container">
+<div class="row">
+  <div id="contactInfo" class="col-sm-6">
+    <h2>Kontaktirajte nas</h2>
+      <p>Zakazite pozivom svakim radnim danom i subotom od 8h - 20h!</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Beograd, Srbija</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +381 60 380 61 72</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +381 64 021 72 42</p>
+      <p>Sva pitanja, utiske, pohvale ili predloge mozete nam poslati putem kontakt forme.</p>
+  </div>
+  <div class="col-sm-6">
+<div id="contactForm">
+  <form role="form" action="mailer.php" method="post">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" name='email' class="form-control" id="email" placeholder="Vas email" required>
+    </div>
+    <div class="form-group">
+      <label for="ime">Vase Ime:</label>
+      <input type="text" name='ime' class="form-control" id="ime" placeholder="Vase Ime" required>
+    </div>
+    <div class="form-group">
+      <label for="poruka">Poruka:</label>
+      <textarea name="poruka" class="form-control" rows="5" id="poruka"></textarea>
+    </div>
+    <input type="submit" name='send' class="btn btn-default" value="Send" >
+  </form>
+</div>
+</div>
+  </div>
+</div>
+
+<div id="mapContainer" class="container-fluid slideanim">
+  <div id="googleMap" style="height:400px;width:100%;">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d707.7443942229472!2d20.465623166608346!3d44.8016456126985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a700a2bd602d3%3A0xeed280140bd682ea!2sTrg+Slavija+(Bulevar+oslobo%C4%91enja)!5e0!3m2!1sen!2srs!4v1474835953967" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</div>
