@@ -58,7 +58,7 @@
     <div class="col-sm-4" id="footer_social">
       <p>Pratite nas na društvenim mrežama</p>
       <p id="social">
-        <a href="" target="_blank" id="fb_link">
+        <a href="https://www.facebook.com/DubinskoKrstic/" target="_blank" id="fb_link">
         <i class="fa fa-facebook-square" aria-hidden="true"></i>
         </a>
           &nbsp;&nbsp;
@@ -75,7 +75,7 @@
     </div>
   </div>
   <div class="row" id="copyright">
-    Developed by : miloskuruzovic@gmail.com
+    Developed by : <a href="mailto:miloskuruzovic@gmail.com" target="_blank">Miloš Kuruzović</a>
   </div>
 </footer>
 <script src="js/slidein.js"></script>
