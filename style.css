@@ -207,7 +207,7 @@ footer {
 }
 
 #promocija {
-  padding: 50px 20px 50px;
+  padding: 80px 20px 50px;
   text-align: left;
   font-size: 25px;
   background: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,230,80,0.5),rgba(255,255,255,1));
@@ -221,6 +221,19 @@ footer {
   font-size: 20px;
 }
 
+.about_img {
+  width: 100%;
+}
+
+#lavor {
+  width: 70%;
+}
+
+#popust_img {
+  display: inline-block;
+  width: 70%;
+}
+
 #promo {
   font-size: 24px;
   text-transform: uppercase;
@@ -230,12 +243,48 @@ footer {
   font-size: 20px;
 }
 
+#googleMap {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
+  transition: 0.5s;
+}
+
+#googleMap:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
 #contactForm,#contactInfo {
   margin: 40px auto;
 }
 
 #mapContainer {
   padding: 0 !important;
+}
+
+#apr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#apr_slika {
+  padding: 0 30px 0 0;
+}
+
+#apr img {
+  -webkit-filter : contrast(200%);
+  filter: contrast(200%);
+  transition: 0.6s;
+}
+
+#apr_podaci {
+  font-size: 1.2em;
+  text-align: right;
+  line-height: 90%;
+}
+
+#apr_podaci h4 {
+  font-weight: bold;
 }
 
 #footer_main {
@@ -320,6 +369,16 @@ footer {
     visibility: visible; 
 }
 
+.pop {
+  /* The name of the animation */
+    animation-name: pop;
+    -webkit-animation-name: pop; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+}
+
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
     0% {
@@ -346,6 +405,27 @@ footer {
     }
 }
 
+@keyframes pop {
+    0% {
+        opacity: 0;
+        width: 10%;
+    } 
+    100% {
+        opacity: 1;
+        width :100%;
+    } 
+}
+@-webkit-keyframes pop {
+    0% {
+        opacity: 0;
+        width: 10%;
+    } 
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
 
 
     /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -353,4 +433,52 @@ footer {
       .carousel-caption {
         display: none !important; 
       }
+
+      .about_img {
+        display: inline-block;
+        width: 60% !important;
+        margin: 20px auto;
+      }
+
+      #promocija_img {
+        padding: 20px;
+      }
+
+      #apr {
+        margin-top: 0px;
+      }
+
+      #apr_slika {
+        padding: 0 10px 10px 10px;
+      }
+
+      #apr img {
+        width: 60%;
+      }
+
+      #apr_podaci {
+        text-align: left;
+        padding-top: 25px;
+      }
+
+      @keyframes pop {
+    0% {
+        opacity: 0;
+        width: 10%;
+    } 
+    100% {
+        opacity: 1;
+        width :60%;
+    } 
+  }
+      @-webkit-keyframes pop {
+    0% {
+        opacity: 0;
+        width: 10%;
+    } 
+    100% {
+        opacity: 1;
+        width: 60%;
     }
+  }
+}

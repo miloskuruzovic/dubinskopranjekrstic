@@ -3,7 +3,8 @@ var DubinskoApp = angular.module('DubinskoApp', ["ngRoute"]);
 DubinskoApp.config(function($routeProvider){
 	$routeProvider
 	.when("/", {
-		templateUrl : "views/home.html"
+		templateUrl : "views/home.html",
+		controller : "akcija_ctrl"
 	})
 	.when("/cenovnik", {
 		templateUrl : "views/cenovnik.html"
@@ -11,8 +12,17 @@ DubinskoApp.config(function($routeProvider){
 	.when("/contact", {
 		templateUrl : "views/contact.html"
 	})
+	.when("/apr", {
+		templateUrl : "views/apr.html"
+	})
 	.otherwise({
 		redirectTo : "/"
 	})
 });
 
+DubinskoApp.controller("akcija_ctrl", function($scope, $http){
+	$http.get("models/akcija_model.php").success(function(data){
+		$scope.naslov = data['naslov'];
+		$scope.akcije = data['akcije'];
+	});
+});

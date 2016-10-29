@@ -10,9 +10,9 @@ if(isset($_POST['send'])){
         require 'classes/PHPMailerAutoload.php';
         $mail = new PHPMailer;
         $mail->SMTPDebug = false;
-        $mail->From = "servis@dubinskopranjekrstic.com";
+        $mail->From = "servis@dubinskopranjekrstic.rs";
         $mail->FromName = $ime;
-        $mail->addAddress("dubinskokrstic@gmail.com", "Dubinsko Pranje Krstic");
+        $mail->addAddress("office@dubinskopranjekrstic.rs", "Dubinsko Pranje Krstic");
         $mail->isHTML(true);
         $mail->Subject = "Poruka sa sajta.";
         $mail->Body = $poruka . "<br> Ime: " . $ime . "<br> Email: " . $email;

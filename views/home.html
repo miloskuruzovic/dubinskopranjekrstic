@@ -93,6 +93,7 @@
             <li>Dvosed  <span class="cena">800 din.</span></li>
             <li>Ugaona garnitura  <span class="cena">od 1200din.</span></li>
             <li>Fotelja  <span class="cena">450 din</span></li>
+            <li>Tabure  <span class="cena">250 din</span></li>
             <li>Stolice  <span class="cena">kom. 150 din</span></li>
             <li>Tepisi, staze  <span class="cena">1m<sup>2</sup> – 100 din.</span></li>
           </ul>
@@ -111,7 +112,7 @@
           <ul>
             <li>Mala vozila<span class="cena">1850 din</span></li>
             <li>Srednja vozila<span class="cena">2300 din.</span></li>
-            <li>Limuzine<span class="cena">3500 din (karavan +400)</span></li>
+            <li>Limuzine<span class="cena">3000 din (karavan +400)</span></li>
             <li>Mini van, džip, SUV<span class="cena">4300 din.</span></li>
             <li>Kombi vozila<span class="cena">5500 din.</span></li>
             <li>Kamionske kabine<span class="cena">3700 din.</span></li>
@@ -132,8 +133,8 @@
         <li class="first_li">Akcija u oktobru i novembru</li>
         <li>
           <ul>
-            <li><strong>10% popust</strong> - za iznose preko 3000 din</li>
-            <li><strong>15% popust</strong> - za iznose preko 5000 din</li>
+            <li><strong>10% popust</strong> - za iznose preko 4000 din</li>
+            <li style="font-size: 1.2em; color: #666;"><strong>--- Posebni popusti za firme ---</strong></li>
           </ul>
         </li>
         <li class="first_li">SPECIJALAN POPUST</li>
@@ -151,18 +152,18 @@
 <hr>
 </div>
 <div class="container-fluid text-center" id="promocija_container">
-  <h2>AKCIJA!</h2>
+  <h2 style="font-family: 'Comfortaa', cursive;">AKCIJA!</h2>
   <div class="row">
     <div class="col-sm-4" id="promocija_desc">
-      DO KRAJA OKTOBRA ŠOK CENE DUBINSKOG PRANJA
+      {{ naslov[0].naslov }}
     </div>
     <div class="col-sm-4 slideanim" id="promocija_img">
-      <img src="img/akcija.png" class="img-responsive" style="width:70%;   display: inline-block;" alt="Akcija">
+      <img id="popust_img" src="img/akcija.png" class="img-responsive about_img"  alt="Akcija">
     </div>
     <div class="col-sm-4" id="promocija">
-      Bilo koji automobil - <b>1500,00 din.</b><br><br>
-      Trosed , dvosed , fotelja + gratis stolice - <b>1500,00 din.</b><br><br>
-      Ugaona garnitura + gratis stolice -<b>1200,00 din.</b><br>
+      <p ng-repeat="akcija in akcije">
+        {{akcija.sadrzaj}} - <b>{{akcija.cena}} din.</b>
+      </p>
     </div>
     
 
@@ -171,7 +172,7 @@
 <div class="container-fluid text-center" style="border-top: 1px solid rgba(0,0,0,0.1);">
   <h2>O nama</h2>
     <div class="col-sm-2 slideanim">
-      <img src="img/karcher_puzzi.jpg" class="img-responsive" style="width:100%" alt="Karcher puzzi">
+      <img src="img/karcher_puzzi.jpg" class="img-responsive about_img" alt="Karcher puzzi">
     </div>
     <div  class="col-sm-8" id="about">
       <p>Dubinsko čišćenje vršimo najnovijim Karcher i Lavor mašinama, pri tom koristeći kvalitetan antibakterijski prašak, kojim uz pomoć veoma moćnih ekstrakcija prodiremo i do 7cm ispod površine svih vrsta dušeka, tepiha, tapacirunga i mebla ( osim kože ) i na taj način temeljno i efikasno uklanjamo grinje, tvrdokorne fleke, dlake kucnih ljubimaca i neprijatne mirise. Vreme sušenja zavisi od vrste materijala i može biti od 2 do 3 sata. Garantujemo za kvalitet naših usluga i primamo sve vaše eventualne reklamacije.</p>
@@ -179,7 +180,7 @@
       <p id="promo">Dolazimo na vašu adresu u najkraćem mogućem roku!</p>
     </div>  
     <div class="col-sm-2 slideanim">
-     <img src="img/lavor.png" class="img-responsive" style="width:70%" alt="Lavor constalation">
+     <img id="lavor" src="img/lavor.png" class="img-responsive about_img" alt="Lavor constalation">
     </div>
     
   </div>

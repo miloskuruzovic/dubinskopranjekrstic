@@ -14,8 +14,8 @@
   <link rel="icon" type="image/png" href="img/icon2.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>  
   <script src="js/angularapp.js"></script>
 </head>
 <body>
@@ -34,6 +34,7 @@
         <li><a href="#/">Home</a></li>
         <li><a href="#/cenovnik">Cenovnik</a></li>
         <li><a href="#/contact">Kontakt</a></li>
+        <li><a href="#/apr">APR</a></li>
       </ul>
     </div>
   </div>
@@ -53,6 +54,7 @@
         <li><a href="#/">Home</a></li>
         <li><a href="#/cenovnik">Cenovnik</a></li>
         <li><a href="#/contact">Kontakt</a></li>
+        <li><a href="#/apr">APR</a></li>
       </ul>
     </div>
     <div class="col-sm-4" id="footer_social">
