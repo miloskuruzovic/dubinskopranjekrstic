@@ -125,7 +125,7 @@
     <div class="panel panel-default">
       <div class="panel-heading" id="akcija">
       <i class="fa fa-angle-double-down" aria-hidden="true" style="float: left;font-size: 35px;"></i>
-      <span id="akcija_txt">Akcije i popusti</span>
+      <span id="akcija_txt">Popusti</span>
       <i class="fa fa-angle-double-down" aria-hidden="true" style="float: right;font-size: 35px;"></i>
       </div>
       <div class="panel-body" id="akcija_div">
@@ -152,15 +152,15 @@
 <hr>
 </div>
 <div class="container-fluid text-center" id="promocija_container">
-  <h2 style="font-family: 'Comfortaa', cursive;">AKCIJA!</h2>
+  <h2>AKCIJA!</h2>
   <div class="row">
-    <div class="col-sm-4" id="promocija_desc">
+    <div class="col-sm-4 slideanim_left" id="promocija_desc">
       {{ naslov[0].naslov }}
     </div>
     <div class="col-sm-4 slideanim" id="promocija_img">
       <img id="popust_img" src="img/akcija.png" class="img-responsive about_img"  alt="Akcija">
     </div>
-    <div class="col-sm-4" id="promocija">
+    <div class="col-sm-4 slideanim_right" id="promocija">
       <p ng-repeat="akcija in akcije">
         {{akcija.sadrzaj}} - <b>{{akcija.cena}} din.</b>
       </p>
@@ -169,7 +169,7 @@
 
   </div>
 </div>
-<div class="container-fluid text-center" style="border-top: 1px solid rgba(0,0,0,0.1);">
+<div class="container-fluid text-center" id="about_container" style="border-top: 1px solid rgba(0,0,0,0.1);">
   <h2>O nama</h2>
     <div class="col-sm-2 slideanim">
       <img src="img/karcher_puzzi.jpg" class="img-responsive about_img" alt="Karcher puzzi">
@@ -181,8 +181,25 @@
     </div>  
     <div class="col-sm-2 slideanim">
      <img id="lavor" src="img/lavor.png" class="img-responsive about_img" alt="Lavor constalation">
-    </div>
-    
+    </div>  
   </div>
-  <hr>
+  <div class="container text-center" id="banner_container">
+    <div class="row">
+      <div class="col-sm-4 banner">
+        <a href="http://mojemajstorije.com/" target="_blank" title="Moje Majstorije">
+        <img src="img/banner1.png" class="img-responsive" alt="banner" style="width: 100%;">
+        <span style="display: none;">Partner</span>
+        </a>
+      </div>
+      <div class="col-sm-4 text-center" id="prijatelji_naslov">
+        <h3><span id="prijatelji_sajta">- PRIJATELJI SAJTA -</span></h3>
+      </div>
+      <div class="col-sm-4 banner">
+        <a href="http://www.iznajmljivanjeozvucenja.com/" target="_blank" title="Iznajmljivanje ozvučenja">
+        <img src="img/banner2.png" class="img-responsive" alt="banner" style="width: 100%;">
+        <span style="display: none;">Partner</span>
+        </a>
+      </div>
+    </div>
+  </div> 
 </div>
