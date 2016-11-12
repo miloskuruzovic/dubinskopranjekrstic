@@ -1,1 +1,6 @@
-ErrorDocument 404 /Vezba/DubinskoCiscenje/404.html
+ErrorDocument 404 /404.html
+
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
+RewriteRule (.*) https://%1%{REQUEST_URI} [L,R=301]
