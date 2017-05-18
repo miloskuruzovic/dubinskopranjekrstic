@@ -71,8 +71,8 @@
   <div class="col-sm-5">
     <div>
       <p class="telefon_home"><b>Za pitanja, informacije i zakazivanje pozovite: </b></p>
-       <p class="telefon_home"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; 060 / 380 61 72</p>
-       <p class="telefon_home"><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; 064 / 021 72 42</p>
+       <p class="telefon_home"><span class="fa fa-mobile" aria-hidden="true"></span> &nbsp; 060 / 380 61 72</p>
+       <p class="telefon_home"><span class="fa fa-mobile" aria-hidden="true"></span> &nbsp; 064 / 021 72 42</p>
        <p style="text-align: center;">
          Dolazimo na vašu adresu u najkraćem mogućem roku!(Radimo na teritoriji Beograda)
        </p>
@@ -80,43 +80,43 @@
   <script type="text/javascript" src="js/open.js"></script>
     <div class="panel panel-default">
       <div class="panel-heading" id="cenovnik">
-      <i class="fa fa-angle-double-down" aria-hidden="true" style="float: left;font-size: 35px;"></i>
+      <span class="fa fa-angle-double-down" aria-hidden="true" style="float: left;font-size: 35px;"></span>
       <span id="cenovnik_txt">Cenovnik</span>
-      <i class="fa fa-angle-double-down" aria-hidden="true" style="float: right;font-size: 35px;"></i>
+      <span class="fa fa-angle-double-down" aria-hidden="true" style="float: right;font-size: 35px;"></span>
       </div>
       <div class="panel-body" id="cenovnik_div">
       <ul>
         <li class="first_li">NAMEŠTAJ</li>
         <li>
           <ul>
-            <li>Trosed  <span class="cena">1000 din.</span></li>
-            <li>Dvosed  <span class="cena">800 din.</span></li>
-            <li>Ugaona garnitura  <span class="cena">od 1200din.</span></li>
-            <li>Fotelja  <span class="cena">450 din</span></li>
-            <li>Tabure  <span class="cena">250 din</span></li>
-            <li>Stolice  <span class="cena">kom. 150 din</span></li>
-            <li>Tepisi, staze  <span class="cena">1m<sup>2</sup> – 100 din.</span></li>
+            <li>Trosed  <span class="cena">{{namestaj[0].cena}} din.</span></li>
+            <li>Dvosed  <span class="cena">{{namestaj[1].cena}} din.</span></li>
+            <li>Ugaona garnitura  <span class="cena">od {{namestaj[2].cena}}din.</span></li>
+            <li>Fotelja  <span class="cena">{{namestaj[3].cena}} din</span></li>
+            <li>Tabure  <span class="cena">{{namestaj[4].cena}} din</span></li>
+            <li>Stolice  <span class="cena">kom. {{namestaj[5].cena}} din</span></li>
+            <li>Tepisi, staze  <span class="cena">1m<sup>2</sup> – {{namestaj[6].cena}} din.</span></li>
           </ul>
         </li>
         <li class="first_li">KREVETI (DUŠECI) </li>
         <li>
           <ul>
-            <li>Bračni dušek  <span class="cena">1000 din.</span></li>
-            <li>- obostrano  <span class="cena">1300 din.</span></li>
-            <li>Singl dušek  <span class="cena">650din.</span></li>
-            <li>- obostrano  <span class="cena">950 din</span></li>
+            <li>Bračni dušek  <span class="cena">{{duseci[0].cena}} din.</span></li>
+            <li>- obostrano  <span class="cena">{{duseci[1].cena}} din.</span></li>
+            <li>Singl dušek  <span class="cena">{{duseci[2].cena}} din.</span></li>
+            <li>- obostrano  <span class="cena">{{duseci[3].cena}} din</span></li>
           </ul>
         </li>
         <li class="first_li">AUTOMOBILI</li>
         <li>
           <ul>
-            <li>Mala vozila<span class="cena">1850 din</span></li>
-            <li>Srednja vozila<span class="cena">2300 din.</span></li>
-            <li>Limuzine<span class="cena">3000 din (karavan +400)</span></li>
-            <li>Mini van, džip, SUV<span class="cena">4300 din.</span></li>
-            <li>Kombi vozila<span class="cena">5500 din.</span></li>
-            <li>Kamionske kabine<span class="cena">3700 din.</span></li>
-            <li>Autobusi<span class="cena">150 din.(sedište)</span></li>
+            <li>Mala vozila<span class="cena">{{automobili[0].cena}} din</span></li>
+            <li>Srednja vozila<span class="cena">{{automobili[1].cena}} din.</span></li>
+            <li>Limuzine<span class="cena">{{automobili[2].cena}} din (karavan +400)</span></li>
+            <li>Mini van, džip, SUV<span class="cena">{{automobili[3].cena}} din.</span></li>
+            <li>Kombi vozila<span class="cena">{{automobili[4].cena}} din.</span></li>
+            <li>Kamionske kabine<span class="cena">{{automobili[5].cena}} din.</span></li>
+            <li>Autobusi<span class="cena">{{automobili[6].cena}} din.(sedište)</span></li>
           </ul>
         </li>
       </ul>
@@ -124,23 +124,23 @@
     </div>
     <div class="panel panel-default">
       <div class="panel-heading" id="akcija">
-      <i class="fa fa-angle-double-down" aria-hidden="true" style="float: left;font-size: 35px;"></i>
+      <span class="fa fa-angle-double-down" aria-hidden="true" style="float: left;font-size: 35px;"></span>
       <span id="akcija_txt">Popusti</span>
-      <i class="fa fa-angle-double-down" aria-hidden="true" style="float: right;font-size: 35px;"></i>
+      <span class="fa fa-angle-double-down" aria-hidden="true" style="float: right;font-size: 35px;"></span>
       </div>
       <div class="panel-body" id="akcija_div">
       <ul>
-        <li class="first_li">Akcija u oktobru i novembru</li>
+        <li class="first_li">Stalan popust</li>
         <li>
           <ul>
-            <li><strong>10% popust</strong> - za iznose preko 4000 din</li>
+            <li><strong>10% popust</strong> - za iznose preko 5000 din</li>
             <li style="font-size: 1.2em; color: #666;"><strong>--- Posebni popusti za firme ---</strong></li>
           </ul>
         </li>
         <li class="first_li">SPECIJALAN POPUST</li>
         <li>
           <ul>
-            <li><strong>10% popust za trudnice</strong></li>
+            <li><strong>15% popust za trudnice</strong></li>
             <li>DEČIJA AUTO SEDIŠTA - <span style="color: red;">GRATIS !!</span></li>
           </ul>
         </li>
@@ -151,23 +151,23 @@
 </div>
 <hr>
 </div>
+<div id="promocija_perspective">
 <div class="container-fluid text-center" id="promocija_container">
-  <h2>AKCIJA!</h2>
+  <!-- <h2>AKCIJA!</h2> -->
   <div class="row">
     <div class="col-sm-4 slideanim_left" id="promocija_desc">
       {{ naslov[0].naslov }}
     </div>
     <div class="col-sm-4 slideanim" id="promocija_img">
-      <img id="popust_img" src="img/akcija.png" class="img-responsive about_img"  alt="Akcija">
+      <img id="popust_img" src="img/akcija_icon.gif" class="img-responsive about_img"  alt="Akcija">
     </div>
     <div class="col-sm-4 slideanim_right" id="promocija">
       <p ng-repeat="akcija in akcije">
-        {{akcija.sadrzaj}} - <b>{{akcija.cena}} din.</b>
+        <span ng-show="akcija.sadrzaj.length">{{akcija.sadrzaj}} - <b>{{akcija.cena}} din.</b></span>
       </p>
     </div>
-    
-
   </div>
+</div>
 </div>
 <div class="container-fluid text-center" id="about_container" style="border-top: 1px solid rgba(0,0,0,0.1);">
   <h2>O nama</h2>
@@ -175,9 +175,10 @@
       <img src="img/karcher_puzzi.jpg" class="img-responsive about_img" alt="Karcher puzzi">
     </div>
     <div  class="col-sm-8" id="about">
-      <p>Dubinsko čišćenje vršimo najnovijim Karcher i Lavor mašinama, pri tom koristeći kvalitetan antibakterijski prašak, kojim uz pomoć veoma moćnih ekstrakcija prodiremo i do 7cm ispod površine svih vrsta dušeka, tepiha, tapacirunga i mebla ( osim kože ) i na taj način temeljno i efikasno uklanjamo grinje, tvrdokorne fleke, dlake kucnih ljubimaca i neprijatne mirise. Vreme sušenja zavisi od vrste materijala i može biti od 2 do 3 sata. Garantujemo za kvalitet naših usluga i primamo sve vaše eventualne reklamacije.</p>
+      <p>Dubinsko čišćenje vršimo najnovijim Karcher i Lavor mašinama, pri tom koristeći kvalitetan antibakterijski prašak, kojim uz pomoć veoma moćnih ekstrakcija prodiremo i do 7cm ispod površine svih vrsta dušeka, tepiha, tapacirunga i mebla, i na taj način temeljno i efikasno uklanjamo grinje, tvrdokorne fleke, dlake kucnih ljubimaca i neprijatne mirise. Vreme sušenja zavisi od vrste materijala i može biti od 2 do 3 sata. Garantujemo za kvalitet naših usluga i primamo sve vaše eventualne reklamacije.</p>
       <br>
-      <p id="promo">Dolazimo na vašu adresu u najkraćem mogućem roku!</p>
+      <p id="promo">Dolazimo na vašu adresu u najkraćem mogućem roku!</p><br>
+      <p>Ukoliko nemate sopstvenu garažu, pranje automobila možemo obaviti na lokaciji koju smo iznajmili u te svrhe, na adresi <a href="#/contact">Vojvode Stepe 110</a>. <b>Zakazivanje je obavezno!!</b></p>
     </div>  
     <div class="col-sm-2 slideanim">
      <img id="lavor" src="img/lavor.png" class="img-responsive about_img" alt="Lavor constalation">

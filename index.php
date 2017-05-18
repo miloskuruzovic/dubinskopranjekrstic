@@ -4,14 +4,13 @@
   <title>Dubinsko pranje Krstić - Beograd</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Najpovoljnije dubinsko pranje automobila, namestaja i tepiha u Beogradu uz pomoć najnovijih Lavor i Karcher mašina. Dolazimo na kućnu adresu!">
+  <meta name="description" content="Najpovoljnije dubinsko pranje automobila, nameštaja i tepiha u Beogradu uz pomoć najnovijih Lavor i Karcher mašina. Dolazimo na kućnu adresu!">
   <meta name="keywords" content="dubinsko pranje ciscenje automobila namestaja fotelje dvosedi trosedi beograd antibakterijsko Lavor Karcher deep cleaning belgrade">
   <meta name="author" content="miloskuruzovic@gmail.com">
-  <link rel="alternate" hreflang="sr" href="http://dubinskopranjekrstic.rs/">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css"/>
-  <link rel="icon" type="image/png" href="img/icon2.png">
+  <link href="favicon.ico" rel="icon" type="image/x-icon" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -44,6 +43,7 @@
       <ul class="nav navbar-nav">
         <li><a href="#/">Home</a></li>
         <li><a href="#/cenovnik">Cenovnik</a></li>
+        <li><a href="#/galerija">Galerija</a></li>
         <li><a href="#/apr">APR</a></li>
         <li><a href="#/contact">Kontakt</a></li>
       </ul>
@@ -52,7 +52,7 @@
 </nav>
     <div id="title_div">
       <h1>Dubinsko pranje Krstić</h1>
-      <h5>Najpovoljnije dubinsko pranje automobila, namestaja i tepiha u Beogradu uz pomoć najnovijih Lavor i Karcher mašina. Dolazimo na kućnu adresu!</h5>
+      <h5>Najpovoljnije dubinsko pranje automobila, nameštaja i tepiha u Beogradu uz pomoć najnovijih Lavor i Karcher mašina. Dolazimo na kućnu adresu!</h5>
     </div>
 <div id="main" data-ng-app="DubinskoApp" data-ng-view>
 </div>
@@ -64,6 +64,7 @@
       <ul>
         <li><a href="#/">Home</a></li>
         <li><a href="#/cenovnik">Cenovnik</a></li>
+        <li><a href="#/galerija">Galerija</a></li>
         <li><a href="#/apr">APR</a></li>
         <li><a href="#/contact">Kontakt</a></li>
       </ul>
@@ -72,12 +73,12 @@
       <p>Pratite nas na društvenim mrežama</p>
       <p id="social">
         <a href="https://www.facebook.com/DubinskoKrstic/" target="_blank" id="fb_link">
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        <span class="fa fa-facebook-square" aria-hidden="true"></span>
         <span style="display: none;">Facebook page</span>
         </a>
           &nbsp;&nbsp;
         <a href="https://twitter.com/DPranje" target="_blank" id="tw_link">
-        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        <span class="fa fa-twitter-square" aria-hidden="true"></span>
         <span style="display: none;">Twitter profile</span>
         </a>
       </p>
@@ -85,8 +86,8 @@
     </div>
     <div class="col-sm-4" id="footer_kontakt">
       <p>Za sva pitanja pozovite: </p>
-      <p><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; 060 / 380 61 72 </p>
-      <p><i class="fa fa-mobile" aria-hidden="true"></i> &nbsp; 064 / 021 72 42 </p>
+      <p><span class="fa fa-mobile" aria-hidden="true"></span> &nbsp; 060 / 380 61 72 </p>
+      <p><span class="fa fa-mobile" aria-hidden="true"></span> &nbsp; 064 / 021 72 42 </p>
     </div>
   </div>
   <div class="row" id="btt">
@@ -97,13 +98,13 @@
   <div class="row" id="copyright">
     &copy; 2016
     Developed by :  
-    <a data-toggle="modal" data-target="#myModal">Miloš Kuruzović</a> 
-    <i class="fa fa-hand-o-left" aria-hidden="true"></i><br>
+    <a href="https://ttfu.in.rs/" target="_blank" title="Izrada i održavanje web sajtova">TTFU Design</a> 
+    <span class="fa fa-hand-o-left" aria-hidden="true"></span><br>
     <!--
     Contact me at : <span class="highlight" title="Izrada i održavanje web sajtova">miloskuruzovic@gmail.com</span>
     -->
   </div>
-    <div id="myModal" class="modal fade" role="dialog">
+   <!-- <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -134,7 +135,7 @@
           </div>
         </div>
       </div>
-  </div>
+  </div> -->
 </footer>
 <script src="js/slidein.js"></script>
 <script src="js/smooth_scroll.js"></script>

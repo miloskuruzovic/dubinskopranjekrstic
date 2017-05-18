@@ -10,34 +10,13 @@
 			      </tr>
 			    </thead>
 			    <tbody>
-			      <tr>
-			        <td>Mala vozila (Yugo, Lupo, C1...)</td>
-			        <td class="text-right">1850 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Srednja vozila (Golf, Peugeot 206, 307...)</td>
-			        <td class="text-right">2300 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Limuzine (Peugeot 406, Audi A4...)</td>
-			        <td class="text-right">3000 din (doplata za karavane +400 din)</td>
-			      </tr>
-			      <tr>
-			        <td>Mini van, džip, SUV (do 7 sedišta)</td>
-			        <td class="text-right">4300 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Kombi vozila</td>
-			        <td class="text-right">5500 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Kamionske kabine</td>
-			        <td class="text-right">3700 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Autobusi</td>
-			        <td class="text-right">150 din.(po sedištu)</td>
-			      </tr>
+			    	<tr ng-repeat="automobil in automobili">
+			    		<td>{{automobil.naziv}}</td>
+			    		<td class="text-right">{{automobil.cena}} din. 
+			    		<span ng-if="automobil.usluga_id == 3">(doplata za karavane +400 din)</span>
+			    		<span ng-if="automobil.usluga_id == 7">(po sedištu)</span>
+			    		</td>
+			    	</tr>
 			    </tbody>
 			</table>
 		</div>
@@ -58,34 +37,15 @@
 			      </tr>
 			    </thead>
 			    <tbody>
-			      <tr>
-			        <td>Trosed</td>
-			        <td class="text-right">1000 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Dvosed</td>
-			        <td class="text-right">800 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Ugaona garnitura</td>
-			        <td class="text-right">(po sedalnom mestu 300 din) od 1200din.</td>
-			      </tr>
-			      <tr>
-			        <td>Fotelja</td>
-			        <td class="text-right">450 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Tabure</td>
-			        <td class="text-right">250 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Stolice</td>
-			        <td class="text-right">kom. 150 din</td>
-			      </tr>
-			      <tr>
-			        <td>Tepisi, staze</td>
-			        <td class="text-right">1m<sup>2</sup> – 100 din.</td>
-			      </tr>
+			    	<tr ng-repeat="komad in namestaj">
+			    		<td>{{komad.naziv}}</td>
+			    		<td class="text-right">
+			    		<span ng-if="komad.usluga_id == 10">(po sedalnom mestu 300 din.) od </span>
+			    		<span ng-if="komad.usluga_id == 13">kom. </span>
+			    		<span ng-if="komad.usluga_id == 14">1m<sup>2</sup> - </span>
+			    		{{komad.cena}} din. 
+			    		</td>
+			    	</tr>
 			    </tbody>
 			</table>
 		</div>	
@@ -100,22 +60,10 @@
 			      </tr>
 			    </thead>
 			    <tbody>
-			      <tr>
-			        <td>Bračni dušek</td>
-			        <td class="text-right">1000 din.</td>
-			      </tr>
-			      <tr>
-			        <td>- obostrano </td>
-			        <td class="text-right">1300 din.</td>
-			      </tr>
-			      <tr>
-			        <td>Singl dušek</td>
-			        <td class="text-right">650 din.</td>
-			      </tr>
-			      <tr>
-			        <td>- obostrano</td>
-			        <td class="text-right">950 din.</td>
-			      </tr>
+			    	<tr ng-repeat="dusek in duseci">
+			    		<td>{{dusek.naziv}}</td>
+			    		<td class="text-right">{{dusek.cena}} din.</td>
+			    	</tr>
 			    </tbody>
 			</table>
 		</div>

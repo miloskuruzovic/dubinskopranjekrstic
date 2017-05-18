@@ -1,0 +1,17 @@
+#naslov-display {
+	padding: 0 0 30px 0;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	color: #0E8680;
+}
+
+#main-heading {
+	font-weight: bold;
+}
+
+.sub-heading {
+	margin: 20px 0 50px !important;
+	font-size: 30px;
+	color: #860E24;
+}

@@ -147,12 +147,30 @@ footer {
 .filler {
   padding: 20px 10px 0;
 }
+#promocija_perspective {
+  -webkit-perspective: 450px;
+  perspective: 450px;
+}
 #promocija_container {
   background-image: url("img/bg/back15.png");
   margin-bottom: 40px;
   border-top: 1px solid rgba(0,0,0,0.1);
   outline-style: double;
   border-bottom: 1px double rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 2px 13px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 13px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 13px 5px rgba(0,0,0,0.75);
+  transition: 0.7s;
+}
+#promocija_container:hover {
+  transform: translateZ(4px);
+  -webkit-box-shadow: 0px 3px 23px 10px rgba(0,0,0,0.65);
+  -moz-box-shadow: 0px 3px 23px 10px rgba(0,0,0,0.65);
+  box-shadow: 0px 3px 23px 10px rgba(0,0,0,0.65);
+}
+#promocija_container code {
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 #promocija_container .row {
   padding: 15px !important;
@@ -265,6 +283,51 @@ footer {
 }
 #apr_podaci h4 {
   font-weight: bold;
+}
+.gallery-item {
+  padding: 30px 0px;
+  filter: grayscale(0%) brightness(100%);
+  transition: 0.5s;
+}
+.gallery-item:hover {
+  filter: grayscale(80%) brightness(50%);
+}
+.gallery-thumb {
+  border-radius: 0%;
+  max-width: 100%;
+  display: inline-block;
+}
+.gallery-info,
+.gallery-heading {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #888;
+  padding: 10px 20px;
+}
+.gallery-heading {
+  font-size: 1.5em !important;
+}
+.hl {
+  color: #666;
+}
+.gallery-before {
+  padding: 0 1px 0 0;
+  text-align: right;
+}
+.gallery-after {
+  padding: 0 0 0 1px;
+  text-align: left;
+}
+.gallery-before h4,
+.gallery-after h4 {
+  text-align: center;
+  font-weight: 700;
+}
+.modal-gallery-v {
+  width: 60% !important;
+}
+.modal-gallery-h {
+  width: 80% !important;
 }
 #footer_main {
   padding: 20px 5px;
@@ -386,6 +449,13 @@ footer {
      animation-duration: 1s; 
     -webkit-animation-duration: 1s;
 }
+.gallery-slide {
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+     animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+}
+
 
 /* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
 @keyframes slide {
@@ -481,6 +551,7 @@ footer {
     }
 }
 
+
     /* Hide the carousel text when the screen is less than 600 pixels wide */
     @media (max-width: 600px) {
       .carousel-caption {
@@ -528,6 +599,19 @@ footer {
       #apr_podaci {
         text-align: left;
         padding-top: 25px;
+      }
+      .gallery-thumb {
+        border-radius: 0%;
+        max-width: 50%;
+        display: inline-block;
+      }
+      .gallery-after,
+      .gallery-before {
+        text-align: center;
+      }
+      .modal-gallery-h,
+      .modal-gallery-v {
+        width: 90% !important;
       }
       @keyframes pop {
     0% {
