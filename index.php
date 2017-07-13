@@ -8,7 +8,7 @@
   <meta name="keywords" content="dubinsko pranje ciscenje automobila namestaja fotelje dvosedi trosedi beograd antibakterijsko Lavor Karcher deep cleaning belgrade">
   <meta name="author" content="miloskuruzovic@gmail.com">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
@@ -76,7 +76,12 @@
         <span class="fa fa-facebook-square" aria-hidden="true"></span>
         <span style="display: none;">Facebook page</span>
         </a>
-          &nbsp;&nbsp;
+          &nbsp;
+        <a href="https://www.instagram.com/dubinskokrstic/" target="_blank" id="ig_link">
+        <span class="fa fa-instagram" aria-hidden="true"></span>
+        <span style="display: none;">Instagram profile</span>
+        </a>
+          &nbsp;
         <a href="https://twitter.com/DPranje" target="_blank" id="tw_link">
         <span class="fa fa-twitter-square" aria-hidden="true"></span>
         <span style="display: none;">Twitter profile</span>

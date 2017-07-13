@@ -89,34 +89,51 @@
         <li class="first_li">NAMEŠTAJ</li>
         <li>
           <ul>
-            <li>Trosed  <span class="cena">{{namestaj[0].cena}} din.</span></li>
-            <li>Dvosed  <span class="cena">{{namestaj[1].cena}} din.</span></li>
-            <li>Ugaona garnitura  <span class="cena">od {{namestaj[2].cena}}din.</span></li>
-            <li>Fotelja  <span class="cena">{{namestaj[3].cena}} din</span></li>
-            <li>Tabure  <span class="cena">{{namestaj[4].cena}} din</span></li>
-            <li>Stolice  <span class="cena">kom. {{namestaj[5].cena}} din</span></li>
-            <li>Tepisi, staze  <span class="cena">1m<sup>2</sup> – {{namestaj[6].cena}} din.</span></li>
+            <li ng-repeat="komad in namestaj">
+              {{komad.naziv}}
+              <span class="cena">
+              <span ng-if="komad.usluga_id == 10">od </span>
+              <span ng-if="komad.usluga_id == 13">kom. </span>
+              <span ng-if="komad.usluga_id == 14">1m<sup>2</sup> – </span>
+              {{komad.cena}} din.
+              </span>
+            </li>
           </ul>
         </li>
         <li class="first_li">KREVETI (DUŠECI) </li>
         <li>
           <ul>
-            <li>Bračni dušek  <span class="cena">{{duseci[0].cena}} din.</span></li>
-            <li>- obostrano  <span class="cena">{{duseci[1].cena}} din.</span></li>
-            <li>Singl dušek  <span class="cena">{{duseci[2].cena}} din.</span></li>
-            <li>- obostrano  <span class="cena">{{duseci[3].cena}} din</span></li>
+            <li ng-repeat="dusek in duseci">
+              {{dusek.naziv}}
+              <span class="cena">
+              {{dusek.cena}} din.
+              </span>
+            </li>
           </ul>
         </li>
         <li class="first_li">AUTOMOBILI</li>
         <li>
           <ul>
-            <li>Mala vozila<span class="cena">{{automobili[0].cena}} din</span></li>
-            <li>Srednja vozila<span class="cena">{{automobili[1].cena}} din.</span></li>
-            <li>Limuzine<span class="cena">{{automobili[2].cena}} din (karavan +400)</span></li>
-            <li>Mini van, džip, SUV<span class="cena">{{automobili[3].cena}} din.</span></li>
-            <li>Kombi vozila<span class="cena">{{automobili[4].cena}} din.</span></li>
-            <li>Kamionske kabine<span class="cena">{{automobili[5].cena}} din.</span></li>
-            <li>Autobusi<span class="cena">{{automobili[6].cena}} din.(sedište)</span></li>
+            <li ng-repeat="automobil in automobili">
+              {{automobil.naziv}}
+              <span class="cena">
+              {{automobil.cena}} din.
+              <span ng-if="automobil.usluga_id == 3">(karavan +400)</span>
+              <span ng-if="automobil.usluga_id == 7">(sedište)</span>
+              </span>
+            </li>
+          </ul>
+        </li>
+        <li class="first_li">KOŽNE POVRŠINE</li>
+        <li>
+          <ul>
+            <li ng-repeat="usluga in koza">
+              {{usluga.naziv}}
+              <span class="cena">
+              <span ng-if="usluga.usluga_id < 27">od </span>
+              {{usluga.cena}} din.
+              </span>
+            </li>
           </ul>
         </li>
       </ul>
@@ -140,7 +157,7 @@
         <li class="first_li">SPECIJALAN POPUST</li>
         <li>
           <ul>
-            <li><strong>15% popust za trudnice</strong></li>
+            <li><strong>10% popust za trudnice</strong></li>
             <li>DEČIJA AUTO SEDIŠTA - <span style="color: red;">GRATIS !!</span></li>
           </ul>
         </li>
@@ -175,7 +192,7 @@
       <img src="img/karcher_puzzi.jpg" class="img-responsive about_img" alt="Karcher puzzi">
     </div>
     <div  class="col-sm-8" id="about">
-      <p>Dubinsko čišćenje vršimo najnovijim Karcher i Lavor mašinama, pri tom koristeći kvalitetan antibakterijski prašak, kojim uz pomoć veoma moćnih ekstrakcija prodiremo i do 7cm ispod površine svih vrsta dušeka, tepiha, tapacirunga i mebla, i na taj način temeljno i efikasno uklanjamo grinje, tvrdokorne fleke, dlake kucnih ljubimaca i neprijatne mirise. Vreme sušenja zavisi od vrste materijala i može biti od 2 do 3 sata. Garantujemo za kvalitet naših usluga i primamo sve vaše eventualne reklamacije.</p>
+      <p>Dubinsko čišćenje vršimo najnovijim Karcher mašinama, pri tom koristeći kvalitetan antibakterijski prašak (Karcher i Fra-ber), kojim uz pomoć veoma moćnih ekstrakcija prodiremo i do 7cm ispod površine svih vrsta dušeka, tepiha, tapacirunga i mebla, i na taj način temeljno i efikasno uklanjamo grinje, tvrdokorne fleke, dlake kucnih ljubimaca i neprijatne mirise. Vreme sušenja zavisi od vrste materijala i može biti od 2 do 3 sata. Garantujemo za kvalitet naših usluga i primamo sve vaše eventualne reklamacije.</p>
       <br>
       <p id="promo">Dolazimo na vašu adresu u najkraćem mogućem roku!</p><br>
       <p>Ukoliko nemate sopstvenu garažu, pranje automobila možemo obaviti na lokaciji koju smo iznajmili u te svrhe, na adresi <a href="#/contact">Vojvode Stepe 110</a>. <b>Zakazivanje je obavezno!!</b></p>

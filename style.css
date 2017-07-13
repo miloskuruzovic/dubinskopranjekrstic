@@ -347,7 +347,9 @@ footer {
 #fb_link:link,
 #fb_link:visited,
 #tw_link:link,
-#tw_link:visited {
+#tw_link:visited,
+#ig_link:link,
+#ig_link:visited {
   text-decoration: none;
   color: #333;
   transition: 0.4s;
@@ -357,6 +359,9 @@ footer {
 }
 #tw_link:hover {
   color: #0084b4;
+}
+#ig_link:hover {
+  color: #c32aa3;
 }
 #footer_nav h4 {
   font-family: 'Comfortaa', cursive;

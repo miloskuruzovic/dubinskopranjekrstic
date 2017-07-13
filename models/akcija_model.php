@@ -4,7 +4,7 @@ require_once "../core/init.php";
 
 $akcija_res = Akcija::getAll();
 $naslov_res = Naslov::getAll();
-$usluge_res = Usluge::getAll();
+$usluge_res = Usluge::getAll("ORDER BY poredak");
 
 foreach ($usluge_res as $usluga) {
 	switch ($usluga->kategorija) {
@@ -20,6 +20,10 @@ foreach ($usluge_res as $usluga) {
 			$duseci[] = $usluga;
 			break;
 		
+		case '4':
+			$koza[] = $usluga;
+			break;
+
 		default:
 			break;
 	}
@@ -30,9 +34,11 @@ $naslov_res = json_encode($naslov_res);
 $automobili_res = json_encode($automobili);
 $namestaj_res = json_encode($namestaj);
 $duseci_res = json_encode($duseci);
+$koza_res = json_encode($koza);
 
 echo '{ "naslov": ' . $naslov_res 
 	. ',"akcije": ' . $akcija_res 
 	. ',"automobili": ' . $automobili_res 
 	. ',"namestaj": ' . $namestaj_res 
-	. ',"duseci": ' . $duseci_res . '}';
+	. ',"duseci": ' . $duseci_res 
+	. ',"koza": ' . $koza_res . '}';

@@ -40,7 +40,7 @@
 			    	<tr ng-repeat="komad in namestaj">
 			    		<td>{{komad.naziv}}</td>
 			    		<td class="text-right">
-			    		<span ng-if="komad.usluga_id == 10">(po sedalnom mestu 300 din.) od </span>
+			    		<span ng-if="komad.usluga_id == 10">(po sedalnom mestu 400 din.) od </span>
 			    		<span ng-if="komad.usluga_id == 13">kom. </span>
 			    		<span ng-if="komad.usluga_id == 14">1m<sup>2</sup> - </span>
 			    		{{komad.cena}} din. 
@@ -70,5 +70,29 @@
 		<div class="col-sm-4">
 			<img src="img/bed_cenovnik.jpg" class="img-responsive" style="width:100%" alt="kreveti duseci pranje cenovnik">
 		</div>
+	</div>
+	<div class="row" style="margin-top: 40px;">
+		<div class="col-sm-4">
+			<img src="img/leather_cenovnik.jpg" class="img-responsive" style="width:100%" alt="namestaj pranje cenovnik">
+		</div>
+		<div class="col-sm-8 cenovnik">
+			<table class="table table-hover">
+			    <thead>
+			      <tr>
+			        <th>Kožne površine</th>
+			        <th class="text-right">Cena</th>
+			      </tr>
+			    </thead>
+			    <tbody>
+			    	<tr ng-repeat="usluga in koza">
+			    		<td>{{usluga.naziv}}</td>
+			    		<td class="text-right">
+			    		<span ng-if="usluga.usluga_id < 27"> od </span>
+			    		{{usluga.cena}} din. 
+			    		</td>
+			    	</tr>
+			    </tbody>
+			</table>
+		</div>	
 	</div>
 </div>

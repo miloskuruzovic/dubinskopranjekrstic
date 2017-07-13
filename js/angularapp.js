@@ -31,6 +31,7 @@ DubinskoApp.controller("akcija_ctrl", function($scope, $http){
 		$scope.automobili = data['automobili'];
 		$scope.namestaj = data['namestaj'];
 		$scope.duseci = data['duseci'];
+		$scope.koza = data['koza'];
 	});
 });
 
@@ -39,5 +40,6 @@ DubinskoApp.controller("cenovnik_ctrl", function($scope, $http){
 		$scope.automobili = data['automobili'];
 		$scope.namestaj = data['namestaj'];
 		$scope.duseci = data['duseci'];
+		$scope.koza = data['koza'];
 	});
 });
